@@ -33,8 +33,10 @@ public class Player {
 			System.out.println(c.getNumber() + "," + c.getSuit());
 		}
 		
+		hand.sort();
 		System.out.println("Hand:");
 		hand.printHand();
+		
 		System.out.println();
 		System.out.println("Type exit to end game at any time.");
 		System.out.println("Type pass to end your turn without playing a card.");

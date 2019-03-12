@@ -51,4 +51,14 @@ public class Hand{
 		}
 	}
 	
+	/**
+	* Sorts hand in ascending order with numbers.
+	*
+	* Returns a sorted hand.
+	*
+	*/
+	public void sort() {
+		Collections.sort(hand, (Card c1, Card c2) -> c1.number.getNumberRanking() - c2.number.getNumberRanking());
+	}
+	
 }
